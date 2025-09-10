@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { NavBar } from "@/components/NavBar";
 import { Orbs } from "@/components/Orbs";
 import { Stars } from "@/components/Stars";
+import TerminalPreview from "@/components/TerminalPreview";
 
 const GITHUB_URL = "https://github.com/chrisvanbuskirk/appshot";
 
@@ -49,54 +50,38 @@ export default function Home() {
           </a>
         </motion.div>
 
-        {/* fake device frame to suggest output */}
+        {/* Terminal window */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="mx-auto mt-14 w-full max-w-4xl rounded-[20px] border border-white/10 bg-gradient-to-b from-white/5 to-white/0 p-2 shadow-xl"
+          className="mx-auto mt-14 w-full max-w-4xl"
         >
-          <div className="glass relative aspect-[16/9] w-full overflow-hidden rounded-[16px]">
-            <div className="absolute inset-0 bg-[radial-gradient(1200px_200px_at_50%_-20%,rgba(255,255,255,0.15),transparent)]" />
-            <div className="absolute right-3 top-3 rounded-md bg-black/60 px-2 py-1 text-xs text-white/80">
-              appshot build ./screenshots
-            </div>
-            <div className="absolute inset-0 grid place-items-center text-center text-white/80">
-              <div>
-                <div className="text-sm uppercase tracking-widest text-white/50">Preview</div>
-                <div className="mt-2 text-2xl font-semibold">Your screenshot, but epic</div>
+          <div className="overflow-hidden rounded-lg border border-white/10 bg-black/80 shadow-2xl backdrop-blur-sm">
+            {/* Terminal title bar */}
+            <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-4 py-3">
+              <div className="flex items-center gap-2">
+                <div className="flex gap-1.5">
+                  <div className="h-3 w-3 rounded-full bg-red-500/80 hover:bg-red-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-yellow-500/80 hover:bg-yellow-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-green-500/80 hover:bg-green-500"></div>
+                </div>
+                <span className="ml-2 text-xs text-white/60 font-mono">appshot@terminal ~ %</span>
               </div>
+              <div className="flex items-center gap-3 text-xs text-white/40">
+                <span>bash</span>
+                <span>•</span>
+                <span>UTF-8</span>
+              </div>
+            </div>
+            {/* Terminal content */}
+            <div className="relative aspect-[16/9] w-full overflow-hidden bg-black">
+              <TerminalPreview />
             </div>
           </div>
         </motion.div>
       </section>
 
-      {/* Features */}
-      <section id="features" className="relative z-10 mx-auto mt-28 grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
-        {[
-          {
-            title: "Drop + Style",
-            desc: "Drag in a screenshot, pick a theme, done.",
-          },
-          {
-            title: "Preset Frames",
-            desc: "Phone, desktop, bezel-less, skeuomorphic and more.",
-          },
-          {
-            title: "CLI & GUI",
-            desc: "Automate in CI or use the desktop app.",
-          },
-        ].map((f) => (
-          <div
-            key={f.title}
-            className="glass group rounded-2xl border border-white/10 p-5 transition hover:border-white/20"
-          >
-            <div className="text-lg font-semibold">{f.title}</div>
-            <p className="mt-2 text-sm text-white/70">{f.desc}</p>
-            <div className="mt-6 h-24 rounded-xl bg-gradient-to-tr from-white/10 to-white/0 opacity-70 transition group-hover:opacity-100" />
-          </div>
-        ))}
-      </section>
 
       {/* Install */}
       <section id="install" className="relative z-10 mx-auto mt-28 w-full max-w-3xl">
@@ -128,4 +113,3 @@ npm install && npm run dev`}
     </main>
   );
 }
-
