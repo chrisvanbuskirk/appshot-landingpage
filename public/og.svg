@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5ef6"/>
+      <stop offset="0.5" stop-color="#7c7bff"/>
+      <stop offset="1" stop-color="#48e1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0b11"/>
+  <g opacity="0.2">
+    <circle cx="200" cy="120" r="220" fill="url(#g)"/>
+    <circle cx="1000" cy="520" r="260" fill="url(#g)"/>
+  </g>
+  <text x="600" y="280" text-anchor="middle" fill="#fff" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="72" font-weight="700">App Shot</text>
+  <text x="600" y="350" text-anchor="middle" fill="#c8c8d0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="28">Open-source screenshot builder</text>
+</svg>
+
