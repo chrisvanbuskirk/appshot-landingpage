@@ -5,8 +5,7 @@ import { NavBar } from "@/components/NavBar";
 import { Orbs } from "@/components/Orbs";
 import { Stars } from "@/components/Stars";
 import TerminalPreview from "@/components/TerminalPreview";
-
-const GITHUB_URL = "https://github.com/chrisvanbuskirk/appshot";
+import { GITHUB_URL, INSTALL_CMD, NPX_CMD } from "@/app/config";
 
 export default function Home() {
   return (
@@ -88,21 +87,23 @@ export default function Home() {
         <div className="rounded-2xl border border-white/10 bg-black/30 p-6 shadow-lg">
           <h2 className="text-xl font-semibold">Quick start</h2>
           <p className="mt-2 text-sm text-white/70">
-            App Shot is open source. Install locally or just use the prebuilt
-            releases from GitHub.
+            The easiest way is via npm. You can also browse the source on GitHub.
           </p>
           <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/60">
             <pre className="whitespace-pre-wrap p-4 text-sm text-white/80">
-{`# clone the repo
-git clone ${GITHUB_URL}
-cd appshot
-# run the app (example)
-npm install && npm run dev`}
+{`# install globally
+${INSTALL_CMD}
+
+# or run without installing
+${NPX_CMD}
+
+# usage
+appshot --help`}
             </pre>
           </div>
           <div className="mt-4">
             <a className="btn btn-primary" href={GITHUB_URL} target="_blank" rel="noreferrer">
-              Star the repo
+              View source on GitHub
             </a>
           </div>
         </div>
