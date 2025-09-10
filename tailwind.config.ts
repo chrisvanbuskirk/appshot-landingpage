@@ -31,8 +31,8 @@ const config: Config = {
           "50%": { transform: "translateY(2%)" },
         },
         pulseSlow: {
-          "0%, 100%": { opacity: 0.6 },
-          "50%": { opacity: 1 },
+          "0%, 100%": { opacity: "0.6" },
+          "50%": { opacity: "1" },
         },
         wiggle: {
           "0%, 100%": { transform: "rotate(-1deg)" },
@@ -55,4 +55,3 @@ const config: Config = {
 };
 
 export default config;
-
