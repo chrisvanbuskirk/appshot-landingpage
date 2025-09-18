@@ -21,7 +21,7 @@ export default function Home() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-4xl bg-gradient-to-b from-white to-white/70 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl"
         >
-          Make screenshot magic with App Shot
+          Create App Store Connect screenshots with appshot
         </motion.h1>
 
         <motion.p
@@ -30,9 +30,10 @@ export default function Home() {
           transition={{ delay: 0.1, duration: 0.7 }}
           className="mx-auto mt-6 max-w-2xl text-balance text-lg text-white/70"
         >
-          An open-source screenshot builder that turns raw captures into
-          delicious, share-ready visuals. Inspired by the vibes, powered by
-          simplicity.
+          appshot is the open-source pipeline that composes Apple-approved
+          device frames, captions, and gradients into polished assets ready for
+          App Store Connect. Start with raw captures, end with export-ready
+          screenshots in minutes.
         </motion.p>
 
         <motion.div
@@ -87,7 +88,8 @@ export default function Home() {
         <div className="rounded-2xl border border-white/10 bg-black/30 p-6 shadow-lg">
           <h2 className="text-xl font-bold">Quick start</h2>
           <p className="mt-2 text-sm text-white/70">
-            The easiest way is via npm. You can also browse the source on GitHub.
+            Install the CLI, drop in your screenshots, and export App Store
+            Connect-ready sets for every Apple device lane.
           </p>
           <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/60">
             <pre className="whitespace-pre-wrap p-4 text-sm text-white/80">

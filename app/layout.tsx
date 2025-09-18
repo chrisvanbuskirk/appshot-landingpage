@@ -20,9 +20,9 @@ const jetBrainsMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "App Shot – Screenshot builder",
+  title: "appshot – App Store Connect screenshot builder",
   description:
-    "App Shot is an open-source screenshot builder. Make gorgeous app shots in seconds.",
+    "appshot composes Apple device frames, captions, and gradients into App Store Connect-ready screenshots in minutes.",
   metadataBase: new URL("https://appshot.vercel.app"),
   icons: {
     icon: [
@@ -33,14 +33,16 @@ export const metadata: Metadata = {
     apple: "/icon.png",
   },
   openGraph: {
-    title: "App Shot",
-    description: "Open‑source screenshot builder for beautiful app shots.",
+    title: "appshot",
+    description:
+      "Open-source workflow for generating App Store Connect screenshots across Apple devices.",
     images: ["/og.svg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Shot",
-    description: "Open‑source screenshot builder for beautiful app shots.",
+    title: "appshot",
+    description:
+      "Open-source workflow for generating App Store Connect screenshots across Apple devices.",
     images: ["/og.svg"],
   },
 };

@@ -26,7 +26,7 @@ export function NavBar({ githubUrl }: NavBarProps) {
             className="h-7 w-7 shrink-0"
             priority
           />
-          App Shot
+          appshot
         </Link>
         <div className="flex items-center gap-2 text-sm">
           <Link href="/templates" className="btn btn-ghost">Templates</Link>
