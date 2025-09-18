@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 type NavBarProps = {
   githubUrl: string;
@@ -16,13 +17,19 @@ export function NavBar({ githubUrl }: NavBarProps) {
         transition={{ type: "spring", stiffness: 120, damping: 16 }}
         className="mt-4 flex w-[min(100%,1000px)] items-center justify-between rounded-full border border-white/10 bg-black/30 px-4 py-2 backdrop-blur-lg"
       >
-        <Link href="/" className="flex items-center gap-2 font-semibold">
-          <span className="inline-block h-6 w-6 rounded-[6px] bg-gradient-to-br from-pink-400 via-violet-400 to-cyan-400 shadow-glow" />
+        <Link href="/" className="flex items-center gap-2 font-bold">
+          <Image
+            src="/monitor-icon.png"
+            alt="App Shot icon"
+            width={28}
+            height={28}
+            className="h-7 w-7 shrink-0"
+            priority
+          />
           App Shot
         </Link>
         <div className="flex items-center gap-2 text-sm">
-          <Link href="#features" className="btn btn-ghost">Features</Link>
-          <Link href="/guide" className="btn btn-ghost">Guide</Link>
+          <Link href="/templates" className="btn btn-ghost">Templates</Link>
           <a href={githubUrl} className="btn btn-ghost" target="_blank" rel="noreferrer">
             GitHub
           </a>

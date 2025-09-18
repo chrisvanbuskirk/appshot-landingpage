@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `app/` – Next.js App Router pages and layout. Main entry: `app/page.tsx`; guide embed: `app/guide/page.tsx`.
+- `app/` – Next.js App Router pages and layout. Main entry: `app/page.tsx`.
 - `components/` – Reusable UI (e.g., `NavBar.tsx`, `Orbs.tsx`, `Stars.tsx`, `TerminalPreview.tsx`). PascalCase filenames.
 - `public/` – Static assets served at `/`. Social image lives here; the style guide HTML is copied here on build.
 - `positioning-guide/style-guide.html` – Source of the interactive guide. Do NOT edit the copy under `public/`.
@@ -16,7 +16,7 @@
 - `npm run lint` – ESLint (Next core‑web‑vitals rules).
 
 Examples
-- Open: `/` (landing), `/guide` (embedded), `/positioning-guide/style-guide.html?theme=appshot` (full page).
+- Open: `/` (landing), `/positioning-guide/style-guide.html?theme=appshot` (full page).
 
 ## Coding Style & Naming Conventions
 - Language: TypeScript + React 18, Next.js App Router.
@@ -27,7 +27,7 @@ Examples
 
 ## Testing Guidelines
 - No formal test runner yet. Use `npm run lint` and manual checks.
-- Manual checklist: load `/`, `/guide`, and the full guide URL; verify animations and no console errors.
+- Manual checklist: load `/` and the full guide URL; verify animations and no console errors.
 - If adding tests, use `vitest` for unit and/or `playwright` for e2e under `tests/` or `e2e/`.
 
 ## Commit & Pull Request Guidelines

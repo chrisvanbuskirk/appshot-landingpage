@@ -85,7 +85,7 @@ export default function Home() {
       {/* Install */}
       <section id="install" className="relative z-10 mx-auto mt-28 w-full max-w-3xl">
         <div className="rounded-2xl border border-white/10 bg-black/30 p-6 shadow-lg">
-          <h2 className="text-xl font-semibold">Quick start</h2>
+          <h2 className="text-xl font-bold">Quick start</h2>
           <p className="mt-2 text-sm text-white/70">
             The easiest way is via npm. You can also browse the source on GitHub.
           </p>

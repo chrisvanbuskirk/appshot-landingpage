@@ -24,7 +24,7 @@ Open http://localhost:3000
 
 - Source: `positioning-guide/style-guide.html`
 - Public: `/positioning-guide/style-guide.html?theme=appshot` (auto‑copied on dev/build)
-- Embedded route: `/guide`
+- Embedded route: (temporarily disabled while the guide is refreshed)
 
 ## Configure Quick Start Install Snippet
 

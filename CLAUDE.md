@@ -51,7 +51,6 @@ Note: Both `dev` and `build` automatically copy the positioning guide from `/pos
 
 ### Routing Structure
 - `/` - Main landing page with hero, terminal demo, and install section
-- `/guide` - Embedded positioning guide iframe
 - `/positioning-guide/style-guide.html` - Full interactive style guide (copied from source during build)
 
 ## Development Guidelines from AGENTS.md

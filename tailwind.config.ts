@@ -12,8 +12,8 @@ const config: Config = {
         bg: "#0b0b11",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular"],
+        sans: ["var(--font-jetbrains)", "JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        mono: ["var(--font-jetbrains)", "JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       boxShadow: {
         glow: "0 0 40px 10px rgba(120, 119, 198, 0.35)",
